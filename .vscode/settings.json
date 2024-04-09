@@ -1,0 +1,36 @@
+{
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/.vscode": true,
+    ".dart_tool": true,
+    ".idea": true,
+    "build": true,
+    ".flutter-plugins*": true,
+    ".metadata": true,
+    "**.log": true,
+    ".gitignore": true,
+    "*.iml": true,
+    "**/pubspec.lock": true,
+    "android": true,
+    "ios": true,
+    "web": true,
+    "linux": true,
+    "macos": true,
+    "windows": true
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "pubspec.yaml": "pubspec.lock",
+    ".metadata": ".flutter-plugins,.flutter-plugins-dependencies",
+  },
+  "search.exclude": {
+    "build": true,
+    "android": true,
+    "ios": true,
+    "web": true,
+    "linux": true,
+    "macos": true,
+    "windows": true,
+  }
+}
