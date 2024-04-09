@@ -1,19 +1,35 @@
 name: meeseeks
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
-  sdk: '>=3.5.0-18.0.dev <4.0.0'
+  sdk: ">=3.5.0-18.0.dev <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
+  # Routing
+  go_router: 13.2.3
+
+  # State managment
+  flutter_riverpod: 3.0.0-dev.3
+  riverpod_annotation: 3.0.0-dev.3
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
+
+  # Generates files
+  build_runner: 2.4.9
+
+  # Navigation generation
+  go_router_builder: 2.5.0
+
+  # State Management generation
+  riverpod_generator: 3.0.0-dev.11
 
 flutter:
   uses-material-design: true
