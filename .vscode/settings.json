@@ -11,6 +11,8 @@
     ".gitignore": true,
     "*.iml": true,
     "**/pubspec.lock": true,
+    ".firebaserc": true,
+    "firebase.json": true,
     "android": true,
     "ios": true,
     "web": true,
@@ -21,6 +23,7 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
+    "firebase.json": ".firebaserc",
     "pubspec.yaml": "pubspec.lock,analysis_options.yaml",
     ".metadata": ".flutter-plugins,.flutter-plugins-dependencies",
   },
