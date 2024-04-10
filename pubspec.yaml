@@ -18,6 +18,9 @@ dependencies:
   flutter_riverpod: 3.0.0-dev.3
   riverpod_annotation: 3.0.0-dev.3
 
+  # Preferences
+  shared_preferences: 2.2.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
