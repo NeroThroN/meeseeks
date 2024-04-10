@@ -67,8 +67,9 @@ android: # Build the app for android platform
 	flutter build apk
 
 .PHONY: web
-web: # Build the app for web platform
+web: # Build the app for web platform and deploy to firebase hosting
 	flutter build web
+	firebase deploy --only hosting
 
 .PHONY: all
 all: # Build the app for all supported platforms (linux, Android, web)
