@@ -24,7 +24,7 @@
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
     "firebase.json": ".firebaserc",
-    "pubspec.yaml": "pubspec.lock,analysis_options.yaml",
+    "pubspec.yaml": "pubspec.lock,analysis_options.yaml,flutter_launcher_icons.yaml",
     ".metadata": ".flutter-plugins,.flutter-plugins-dependencies",
   },
   "search.exclude": {

@@ -41,6 +41,9 @@ dev_dependencies:
   # State Management generation
   riverpod_generator: 3.0.0-dev.11
 
+  # Native enhancements
+  flutter_launcher_icons: 0.13.1
+
 dependency_overrides:
   custom_lint_builder: 0.6.0 # Blocked by [riverpod_lint]
   custom_lint_core: 0.6.0 # Blocked by [riverpod_lint]
