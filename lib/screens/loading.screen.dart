@@ -43,6 +43,9 @@ class _LoadingScreenState extends State<LoadingScreen> {
 
   /// Load all futures
   Future<void> _load() async {
+    /// Load the fonts from Google Fonts
+    await ThemesStyle.fetchFonts();
+
     // End of the loading
     setState(() => _loadEnded = true);
   }
