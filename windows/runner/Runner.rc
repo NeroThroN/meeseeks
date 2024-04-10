@@ -95,7 +95,7 @@ BEGIN
             VALUE "InternalName", "meeseeks" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 dev.caille. All rights reserved." "\0"
             VALUE "OriginalFilename", "meeseeks.exe" "\0"
-            VALUE "ProductName", "meeseeks" "\0"
+            VALUE "ProductName", "Meeseeks" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
