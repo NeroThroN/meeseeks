@@ -13,6 +13,7 @@
     "**/pubspec.lock": true,
     ".firebaserc": true,
     "firebase.json": true,
+    ".firebase": true,
     "android": true,
     "ios": true,
     "web": true,
