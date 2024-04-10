@@ -5,9 +5,19 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: Text("I'm Mr. Meeseeks, look at me!"),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text("I'm Mr. Meeseeks, look at me!", style: Theme.of(context).textTheme.displaySmall),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              child: const Text('Press me!'),
+              onPressed: () {},
+            ),
+          ],
+        ),
       ),
     );
   }

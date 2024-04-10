@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:meeseeks/providers/config.provider.dart';
 import 'package:meeseeks/router/config.router.dart';
+import 'package:meeseeks/style/themes.style.dart';
 
 class MeeseeksApp extends ConsumerWidget {
   const MeeseeksApp({super.key});
@@ -16,10 +17,11 @@ class MeeseeksApp extends ConsumerWidget {
 
     return MaterialApp.router(
       title: 'Meeseeks',
-      themeMode: themeMode,
-      theme: ThemeData.light(),
-      darkTheme: ThemeData.dark(),
       routerConfig: router,
+      themeMode: themeMode,
+      theme: ThemesStyle.light,
+      darkTheme: ThemesStyle.dark,
+      scrollBehavior: ThemesStyle.scrollBehavior(context),
     );
   }
 }
