@@ -63,8 +63,9 @@ linux: # Build the app for linux platform
 	flutter build linux
 
 .PHONY: android
-android: # Build the app for android platform
+android: # Build the app for android platform and install it on the connected device
 	flutter build apk
+	flutter install
 
 .PHONY: web
 web: # Build the app for web platform and deploy to firebase hosting
