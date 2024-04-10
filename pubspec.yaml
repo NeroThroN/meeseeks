@@ -11,6 +11,9 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # Utilities
+  google_fonts: 6.2.1
+
   # Routing
   go_router: 13.2.3
   url_strategy: 0.2.0

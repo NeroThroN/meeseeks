@@ -11,6 +11,9 @@ void main() async {
   /// Initialize the system chrome settings
   await ThemesStyle.initSystemChrome();
 
+  // TODO: Move inside loading screen
+  await ThemesStyle.fetchFonts();
+
   /// Initialize the shared preferences
   final prefsOverrides = await Prefs.init();
 

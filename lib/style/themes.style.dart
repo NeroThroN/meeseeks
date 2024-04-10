@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 part 'colors.style.dart';
 
@@ -10,6 +11,9 @@ abstract class ThemesStyle {
 
   /// The dark theme of the app
   static ThemeData get dark => _darkTheme;
+
+  /// Fetch the fonts used in the app
+  static Future<void> fetchFonts() => GoogleFonts.pendingFonts([_mainFont, _titleFont]);
 
   /// Enable drag to scroll in the whole app with the default physics
   static ScrollBehavior scrollBehavior(BuildContext context) => ScrollConfiguration.of(context).copyWith(
@@ -31,9 +35,38 @@ abstract class ThemesStyle {
   }
 }
 
+/// The main font used in the app
+final _mainFont = GoogleFonts.montserrat();
+final _mainFontTheme = GoogleFonts.montserratTextTheme();
+
+/// The title font used in the app
+final _titleFont = GoogleFonts.gloriaHallelujah();
+final _titleFontTheme = GoogleFonts.gloriaHallelujahTextTheme();
+
+/// The default text theme used in the app based on the main and title fonts
+final TextTheme _defaultTextTheme = TextTheme(
+  displayLarge: _titleFontTheme.displayLarge,
+  displayMedium: _titleFontTheme.displayMedium,
+  displaySmall: _titleFontTheme.displaySmall,
+  headlineLarge: _titleFontTheme.headlineLarge,
+  headlineMedium: _titleFontTheme.headlineMedium,
+  headlineSmall: _titleFontTheme.headlineSmall,
+  bodyLarge: _mainFontTheme.bodyLarge,
+  bodyMedium: _mainFontTheme.bodyMedium,
+  bodySmall: _mainFontTheme.bodySmall,
+  labelLarge: _mainFontTheme.labelLarge,
+  labelMedium: _mainFontTheme.labelMedium,
+  labelSmall: _mainFontTheme.labelSmall,
+  titleLarge: _mainFontTheme.titleLarge,
+  titleMedium: _mainFontTheme.titleMedium,
+  titleSmall: _mainFontTheme.titleSmall,
+);
+
 /// Theme configuration shared between light and dark theme
 ThemeData _commmonTheme = ThemeData(
   primaryColor: _Colors.primary,
+  textTheme: _defaultTextTheme,
+  fontFamily: _mainFont.fontFamily,
   navigationBarTheme: const NavigationBarThemeData(
     elevation: 0,
     indicatorColor: _Colors.primary,
