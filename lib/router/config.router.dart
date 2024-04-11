@@ -17,7 +17,7 @@ Raw<GoRouter> router(RouterRef ref) {
 
   /// The router of the app
   final router = GoRouter(
-    initialLocation: HomeRoute().location,
+    initialLocation: CharactersRoute().location,
     routes: $appRoutes,
   );
 

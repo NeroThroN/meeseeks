@@ -12,6 +12,8 @@ dependencies:
     sdk: flutter
 
   # Utilities
+  collection: 1.18.0
+  layout: 1.0.5
   google_fonts: 6.2.1
 
   # Routing

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:layout/layout.dart';
 import 'package:meeseeks/providers/config.provider.dart';
 import 'package:meeseeks/router/config.router.dart';
 import 'package:meeseeks/style/themes.style.dart';
@@ -15,13 +16,15 @@ class MeeseeksApp extends ConsumerWidget {
     /// The theme mode of the application based on themeSwitcher's provider
     final themeMode = ref.watch(themeSwitcherProvider);
 
-    return MaterialApp.router(
-      title: 'Meeseeks',
-      routerConfig: router,
-      themeMode: themeMode,
-      theme: ThemesStyle.light,
-      darkTheme: ThemesStyle.dark,
-      scrollBehavior: ThemesStyle.scrollBehavior(context),
+    return Layout(
+      child: MaterialApp.router(
+        title: 'Meeseeks',
+        routerConfig: router,
+        themeMode: themeMode,
+        theme: ThemesStyle.light,
+        darkTheme: ThemesStyle.dark,
+        scrollBehavior: ThemesStyle.scrollBehavior(context),
+      ),
     );
   }
 }
