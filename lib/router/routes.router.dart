@@ -45,16 +45,28 @@ class NavShell extends ShellRouteData {
 }
 
 class CharactersRoute extends GoRouteData {
+  static const _key = ValueKey('characters-route-key');
+
   @override
-  Widget build(context, state) => CharactersScreen(key: state.pageKey);
+  NoTransitionPage<void> buildPage(context, state) {
+    return NoTransitionPage<void>(key: _key, child: CharactersScreen(key: state.pageKey));
+  }
 }
 
 class LocationsRoute extends GoRouteData {
+  static const _key = ValueKey('locations-route-key');
+
   @override
-  Widget build(context, state) => LocationsScreen(key: state.pageKey);
+  NoTransitionPage<void> buildPage(context, state) {
+    return NoTransitionPage<void>(key: _key, child: LocationsScreen(key: state.pageKey));
+  }
 }
 
 class EpisodesRoute extends GoRouteData {
+  static const _key = ValueKey('episodes-route-key');
+
   @override
-  Widget build(context, state) => EpisodesScreen(key: state.pageKey);
+  NoTransitionPage<void> buildPage(context, state) {
+    return NoTransitionPage<void>(key: _key, child: EpisodesScreen(key: state.pageKey));
+  }
 }
