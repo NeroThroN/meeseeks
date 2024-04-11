@@ -7,7 +7,10 @@ class CharactersScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Characters'),
+        title: Text(
+          'Characters',
+          style: Theme.of(context).textTheme.headlineMedium,
+        ),
       ),
       body: ListView.builder(
         itemCount: 10,

@@ -7,7 +7,10 @@ class LocationsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Locations'),
+        title: Text(
+          'Locations',
+          style: Theme.of(context).textTheme.headlineMedium,
+        ),
       ),
       body: ListView.builder(
         itemCount: 10,

@@ -7,7 +7,10 @@ class EpisodesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Episodes'),
+        title: Text(
+          'Episodes',
+          style: Theme.of(context).textTheme.headlineMedium,
+        ),
       ),
       body: ListView.builder(
         itemCount: 10,
