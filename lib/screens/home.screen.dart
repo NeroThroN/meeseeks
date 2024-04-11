@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meeseeks/router/routes.router.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -28,10 +29,20 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ...typo.map((e) => Text("I'm Mr. Meeseeks, look at me!", style: e)),
-              const SizedBox(height: 20),
+              const SizedBox(height: 32),
               ElevatedButton(
-                child: const Text('Press me!'),
-                onPressed: () {},
+                child: const Text('Go to characters'),
+                onPressed: () => CharactersRoute().push(context),
+              ),
+              const SizedBox(height: 8),
+              ElevatedButton(
+                child: const Text('Go to locations'),
+                onPressed: () => LocationsRoute().push(context),
+              ),
+              const SizedBox(height: 8),
+              ElevatedButton(
+                child: const Text('Go to episodes'),
+                onPressed: () => EpisodesRoute().push(context),
               ),
             ],
           ),
