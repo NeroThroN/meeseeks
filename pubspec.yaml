@@ -25,7 +25,7 @@ dependencies:
   riverpod_annotation: 3.0.0-dev.3
 
   # Preferences
-  shared_preferences: 2.2.2
+  shared_preferences: 2.2.3
 
   # Native enhancements
   flutter_native_splash: 2.4.0
