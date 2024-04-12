@@ -17,7 +17,7 @@ dependencies:
   google_fonts: 6.2.1
 
   # Routing
-  go_router: 13.2.3
+  go_router: 13.2.4
   url_strategy: 0.2.0
 
   # State managment
@@ -44,7 +44,7 @@ dev_dependencies:
   build_runner: 2.4.9
 
   # Navigation generation
-  go_router_builder: 2.5.0
+  go_router_builder: 2.5.1
 
   # State Management generation
   riverpod_generator: 3.0.0-dev.11
